@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import {StyleSheet, View} from 'react-native';
 
-const Container = ({children}: any) => {
+type PropsType = {
+  children: ReactNode;
+};
+
+const Container = ({children}: PropsType) => {
   return <View style={styles.container}>{children}</View>;
 };
 
